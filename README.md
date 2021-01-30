@@ -37,3 +37,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Sistema propuesto
 Tienda muy básica, donde un cliente puede comprar un solo producto con un valor fijo. El cliente necesita únicamente proporcionar su nombre, email y su número de celular.
 
+## Registro de cambios
+* Se agrega sistema básico de login laravel con bootstrap
+* Se crea carpeta Models para mover los modelos en app/Models (se corrige la ruta del modelo en los controladores y en config/auth.php)
+* Se instala Debugbar
+* 
