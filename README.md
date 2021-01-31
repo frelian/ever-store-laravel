@@ -41,4 +41,5 @@ Tienda muy básica, donde un cliente puede comprar un solo producto con un valor
 * Se agrega sistema básico de login laravel con bootstrap
 * Se crea carpeta Models para mover los modelos en app/Models (se corrige la ruta del modelo en los controladores y en config/auth.php)
 * Se instala Debugbar
-* 
+* php artisan make:model "Models\Product" -mcr
+* php artisan make:model "Models\Order" -mcr
