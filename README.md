@@ -36,6 +36,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Sistema propuesto
 Tienda muy básica, donde un cliente puede comprar un solo producto con un valor fijo. El cliente necesita únicamente proporcionar su nombre, email y su número de celular.
+Usuarios de pruebas:
+* user1_ever_store@yopmail.com y contraseña: 123
+* user2_ever_store@yopmail.com y contraseña: 123
 
 ## Registro de cambios
 * Se agrega sistema básico de login laravel con bootstrap
@@ -44,5 +47,6 @@ Tienda muy básica, donde un cliente puede comprar un solo producto con un valor
 * php artisan make:model "Models\Product" -mcr
 * php artisan make:model "Models\Order" -mcr
 * Uso los seeder para agregar usuarios de pruebas para la tienda: php artisan make:seeder UsersTableSeeder   
-* Se agregan datos de prueba (seeders) para Products 
-* 
+* Se agregan datos de prueba (seeders) para Products
+* Agregado el valor del producto para ejemplificar mejor las pruebas
+
