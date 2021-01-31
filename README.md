@@ -43,3 +43,6 @@ Tienda muy básica, donde un cliente puede comprar un solo producto con un valor
 * Se instala Debugbar
 * php artisan make:model "Models\Product" -mcr
 * php artisan make:model "Models\Order" -mcr
+* Uso los seeder para agregar usuarios de pruebas para la tienda: php artisan make:seeder UsersTableSeeder   
+* Se agregan datos de prueba (seeders) para Products 
+* 
