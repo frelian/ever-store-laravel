@@ -1,0 +1,18 @@
+html, body {
+    color: #636b6f;
+}
+
+.nav > a {
+    color: #636b6f;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.area-center {
+    margin: 1% 0 3% 0;
+}
+
+.badge {
+    padding: 0.9em 0.7em;
+    font-size: 98%;
+}

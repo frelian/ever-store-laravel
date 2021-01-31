@@ -82,4 +82,10 @@ class OrderController extends Controller
     {
         //
     }
+
+
+    public function formClient($id)
+    {
+        return view('form-client');
+    }
 }

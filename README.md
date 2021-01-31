@@ -49,4 +49,7 @@ Usuarios de pruebas:
 * Uso los seeder para agregar usuarios de pruebas para la tienda: php artisan make:seeder UsersTableSeeder   
 * Se agregan datos de prueba (seeders) para Products
 * Agregado el valor del producto para ejemplificar mejor las pruebas
-
+* Se protege la vista de registro ya que los unicos con inicio de sesión seran los mismos dueños/empleados de la tienda.
+* Se cargan productos a la vista "/" del sitio
+* Al hacer clic sobre un producto redirige al cliente al formulario de ingreso de datos (solo blade sin obtener data)
+* Pendiente: usar los layout para form-client.blade
