@@ -233,4 +233,6 @@ return [
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
+    'API_REDIRECTION' => env('API_REDIRECTION', 'https://test.placetopay.com/redirection/api/session/'),
+    'API_LOGIN' => env('API_LOGIN', '6dd490faf9cb87a9862245da41170ff2'),
 ];

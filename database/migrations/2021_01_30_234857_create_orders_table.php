@@ -19,6 +19,8 @@ class CreateOrdersTable extends Migration
             $table->string('customer_email', 120);
             $table->string('customer_mobile', 40);
             $table->string('status', 40);
+            $table->string('request_id', 15)->nullable();
+            $table->string('process_url', 150)->nullable();
 
             // Llave foranea con products
             $table->unsignedBigInteger('product_id');

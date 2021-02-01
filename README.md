@@ -32,13 +32,14 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Requisitos de sistema
 * PHP 7.3
 * MySQL
-* Composer
+* Composer 2
 
 ## Sistema propuesto
 Tienda muy básica, donde un cliente puede comprar un solo producto con un valor fijo. El cliente necesita únicamente proporcionar su nombre, email y su número de celular.
 Usuarios de pruebas:
 * user1_ever_store@yopmail.com y contraseña: 123
 * user2_ever_store@yopmail.com y contraseña: 123
+* Para instalar las migraciones y los seeders de pruebas: php artisan migrate:refresh --seed
 
 ## Registro de cambios
 * Se agrega sistema básico de login laravel con bootstrap
@@ -49,4 +50,14 @@ Usuarios de pruebas:
 * Uso los seeder para agregar usuarios de pruebas para la tienda: php artisan make:seeder UsersTableSeeder   
 * Se agregan datos de prueba (seeders) para Products
 * Agregado el valor del producto para ejemplificar mejor las pruebas
-
+* Se protege la vista de registro ya que los unicos con inicio de sesión seran los mismos dueños/empleados de la tienda.
+* Se cargan productos a la vista "/" del sitio
+* Al hacer clic sobre un producto redirige al cliente al formulario de ingreso de datos.
+* Fix, el contenido no se adaptaba a la pantalla, se crea clase .fix-row
+* A la base de datos, la tabla de orders se agregaron los campos de request_id como process_url
+* Se agregan listas de productos 
+* Para el administrador ver el listado de ordenes 
+* Un cliente compra 1 producto sin iniciar sesión
+* Área de estado de cada orden
+* Se agregaron variables de entorno API_REDIRECTION y API_LOGIN teniendo en cuenta que es información pública
+* Se crea el archivo de configuración .env.dist

@@ -1,0 +1,55 @@
+html, body {
+    color: #636b6f;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.fix-row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.nav > a {
+    color: #636b6f;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.area-center {
+    margin: 1% 0 1% 0;
+}
+
+.badge {
+    padding: 0.9em 0.7em;
+    font-size: 98%;
+}
+
+.btn-price-focus {
+    font-size: 1.5em;
+    width: max-content;
+}
+
+.info-product {
+    margin-bottom: 4%;
+}
+
+.card-header {
+    background-color: rgb(255 255 255 / 3%);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 17%);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 40%);
+}
+
+.font-size-1x {
+    font-size: 1.5em;
+}
+
+.font-size-20x {
+    font-size: 1.4em;
+}

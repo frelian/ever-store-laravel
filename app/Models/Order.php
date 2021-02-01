@@ -12,7 +12,7 @@ class Order extends Model
      * @var array
      */
     protected $fillable = [
-        'customer_name', 'customer_email', 'customer_mobile', 'status', 'product_id'
+        'customer_name', 'customer_email', 'customer_mobile', 'status', 'request_id', 'process_url', 'product_id'
     ];
 
     // Una orden le pertenece un producto
