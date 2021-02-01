@@ -12,8 +12,6 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
 
-        <!-- Fonts -->
-
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
@@ -29,7 +27,7 @@
                         <a class="nav-link" href="{{ route('register') }}">Register</a>
                     @endif
                 @else
-                    <a class="nav-link" href="{{ route('login') }}">Login Admin</a>
+                    <a class="nav-link font-size-20x" href="{{ route('login') }}">Login Admin</a>
                 @endauth
             @endif
 
@@ -43,14 +41,15 @@
             </div>
         </div>
 
-
-
-        <div class="row">
+        <div class="row fix-row">
             <div class="container">
                 <div class="list-group">
 
+                    <li class="list-group-item active">
+                        <h4>Listado de productos</h4>
+                    </li>
                     @foreach($products as $product)
-                        <a href="{{ route('order.form', ['idproduct' => $product->id]) }}" class="list-group-item list-group-item-action">
+                        <a href="{{ route('order.create', ['idproduct' => $product->id]) }}" class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1">{{ $product->product_name }}</h5>
                                 <span class="badge badge-primary badge-pill">$ {{ $product->product_price }}</span>

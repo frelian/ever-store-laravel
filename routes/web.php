@@ -13,6 +13,13 @@
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home/{search?}/{page?}', 'HomeController@index')->name('home');
 Route::get('/', 'ProductController@index')->name('products.list');
-Route::get('/client/order/{idproduct}', 'OrderController@formClient')->name('order.form');
+Route::get('/client/order/{idproduct}', 'OrderController@create')->name('order.create');
+Route::post('/client/order', 'OrderController@store')->name('order.store');
+Route::get('/client/order/resume/{idorder}', 'OrderController@show')->name('order.show');
+Route::get('/client/order/pay/{idorder}', 'OrderController@pay')->name('order.pay');
+Route::post('/client/order/pay/{idorder}', 'OrderController@pay')->name('order.pay');
+Route::get('/response/{id}', 'OrderController@responsePay')->name('order.pay.response');
+
+Route::get('/order/status/{idorder}/{checked?}', 'OrderController@statusOrder')->name('order.pay.status');
